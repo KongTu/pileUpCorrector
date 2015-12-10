@@ -8,13 +8,12 @@ pileUp filter for Run2 pp analysis
 
 ## Instructions to add pileUp filter
 
-- click on <strong> copy to clipboard </strong>
 - go to CMSSW_versions/src directory
 - type <pre><code> git clone https://github.com/KongTu/pileUpCorrector.git </pre></code>
-- scram b -j4
+- <pre><code>scram b -j4 </pre></code>
 - go to your config file that runs, add the following line where you load includes 
 <pre><code> process.load("pileUpCorrector.pileUpFilter.pileUpFilter_cff") </pre></code>
-- add your filter candidate process in the cms.Path(), for example: <pre><code> process.pileUpFilter_baseCut </pre></code>
+- add your filter candidate process in the <strong> cms.Path() </strong>, for example: <pre><code> process.pileUpFilter_baseCut </pre></code>
 
 Enjoy!
 
