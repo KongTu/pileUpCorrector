@@ -13,7 +13,7 @@ pileUp filter for Run2 pp analysis
 - <pre><code>scram b -j4 </pre></code>
 - go to your config file that runs, add the following line where you load includes 
 <pre><code> process.load("pileUpCorrector.pileUpFilter.pileUpFilter_cff") </pre></code>
-- add your filter candidate process in the <strong> cms.Path() </strong>, for example: <pre><code> process.pileUpFilter_baseCut </pre></code>
+- add your filter candidate process in the <strong> cms.Path() </strong>, for example: <pre><code> process.pileUpFilter_baseCut_loose </pre></code>
 
 Enjoy!
 
