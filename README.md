@@ -6,7 +6,7 @@ pileUp filter for Run2 pp analysis
 	- <strong> pileUpFilter_baseCut_tight </strong>, apply a dzNtrk tight cut + dxy cut
 	- <strong> pileUpFilter_baseCut_loose_dz1p0 </strong>, apply a dzNtrk loose cut + dxy cut + dz cut
 	- <strong> pileUpFilter_baseCut_tight_dz1p0 </strong>, apply a dzNtrk tight cut + dxy cut + dz cut
-	- <strong> pileUpFilter_only1Vertex </strong>, the extreme cut, accept events with only 1 vertex exsit
+	- <strong> pileUpFilter_vtx1 </strong>, the extreme cut, accept events with only 1 vertex exsit
 
 See details in pileUpCorrector/notebook/pileUpFilterMustRead.ipynb
 
