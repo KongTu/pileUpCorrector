@@ -2,9 +2,13 @@
 pileUp filter for Run2 pp analysis
 
 - pileUp filter candidates
-	- <strong> pileUpFilter_baseCut </strong>, apply a Ntrk cut (number of tracks associated with second primary vertex) as function of dz values
-	- <strong> pileUpFilter_baseCut_dz </strong>, on top of baseCut, accept events that dz > 1cm (distance between first primary vertex and second primary vertex in z direction)
+	- <strong> pileUpFilter_baseCut_loose </strong>, apply a dzNtrk loose cut + dxy cut
+	- <strong> pileUpFilter_baseCut_tight </strong>, apply a dzNtrk tight cut + dxy cut
+	- <strong> pileUpFilter_baseCut_loose_dz1p0 </strong>, apply a dzNtrk loose cut + dxy cut + dz cut
+	- <strong> pileUpFilter_baseCut_tight_dz1p0 </strong>, apply a dzNtrk tight cut + dxy cut + dz cut
 	- <strong> pileUpFilter_only1Vertex </strong>, the extreme cut, accept events with only 1 vertex exsit
+
+See details in notebook/pileUpFilterMustRead.ipyn
 
 ## Instructions to add pileUp filter
 
