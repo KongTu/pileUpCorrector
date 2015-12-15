@@ -387,7 +387,7 @@ vector<TH1D*> loadingHistogram( TFile * file, TString hName, TString histName, i
 
 TLegend* makeLegend(){
 
-	TLegend *w2 = new TLegend(0.65,0.15,0.90,0.45);
+	TLegend *w2 = new TLegend(0.2,0.15,0.50,0.28);
 	w2->SetLineColor(kWhite);
 	w2->SetFillColor(0);
 	return w2;

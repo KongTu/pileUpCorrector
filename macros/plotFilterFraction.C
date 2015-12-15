@@ -4,7 +4,7 @@ using namespace std;
 
 void plotFilterFraction(){
 	
-	TFile* file = new TFile("../rootfile/Ntrk_pileup_2.root");
+	TFile* file = new TFile("../rootfile/Ntrk_pileup_1.root");
 	vector<TH1D*> hist = loadingHistogram(file, "ana_PbPb","/Ntrk", 6);
 	TCanvas* c1 = makeCanvas("c1","Filter Fraction");
 	TH1D* base = makeHist("base", "","N^{offline}_{trk}","Fraction accepted", 200, 0,100, kBlack);
@@ -48,5 +48,18 @@ void plotFilterFraction(){
 	gr[4]->SetLineColor(5);
 	gr[4]->SetMarkerColor(5);
 	gr[4]->Draw("same");
+
+	TLegend * legend = makeLegend();
+	legend->AddEntry(gr[0], "base_loose", "P");
+	legend->AddEntry(gr[1], "base_tight", "P");
+	legend->AddEntry(gr[2], "base_loose_dz1p0", "P");
+	legend->AddEntry(gr[3], "base_tight_dz1p0", "P");
+	legend->AddEntry(gr[4], "vtx1", "P");
+
+	legend->Draw("Psame");
+
+	c1->SaveAs("../files/MC_pileup1_fraction.pdf");
+	c1->SaveAs("../files/MC_pileup1_fraction.png");
+
 
 }
